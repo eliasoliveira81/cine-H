@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de Gêneros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Cor de fundo */
+            color: #fff; /* Cor do texto */
+        }
+
+        #container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #222; /* Cor interna */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .genre-checkbox {
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #007BFF; /* Azul */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Tom mais escuro de azul ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <h1>Escolha de Gêneros</h1>
+    <form id="genresForm">
+        <!-- Lista de Gêneros -->
+        <div class="genre-checkbox">
+            <input type="checkbox" id="aventura" name="genre" value="aventura">
+            <label for="aventura">Aventura</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="animacao" name="genre" value="animacao">
+            <label for="animacao">Animação</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="comedia" name="genre" value="comedia">
+            <label for="comedia">Comédia</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="Crime" name="genre" value="Crime">
+            <label for="Crime">Crime</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="Drama" name="genre" value="Drama">
+            <label for="Drama">Drama</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="Fantasia" name="genre" value="Fantasia">
+            <label for="Fantasia">Fantasia</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="Horror" name="genre" value="Horror">
+            <label for="Horror">Horror</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="Mistério" name="genre" value="Mistério">
+            <label for="Mistério">Mistério</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="Ficção Científica" name="genre" value="Ficção Científica">
+            <label for="Ficção Científica">Ficção Científica</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="Suspense" name="genre" value="Suspense">
+            <label for="Suspense">Suspense</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="Documentário" name="genre" value="Documentário">
+            <label for="Documentário">Documentário</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="Super-herói" name="genre" value="Super-herói">
+            <label for="Super-herói">Super-herói</label>
+        </div>
+        <div class="genre-checkbox">
+            <input type="checkbox" id="Anime Slice of Life" name="genre" value="Anime Slice of Life">
+            <label for="Anime Slice of Life">Anime Slice of Life</label>
+        </div>
+        
+        <!-- Repita para os outros gêneros -->
+
+        <button type="button" onclick="saveGenres()">Salvar Escolhas</button>
+    </form>
+
+    <div id="notification" style="display:none;">
+        <p>Suas escolhas foram salvas.</p>
+    </div>
+</div>
+
+<script>
+    function saveGenres() {
+        // Adicione a lógica para salvar as escolhas no sistema aqui
+        // Redirecionar para outro site após salvar as escolhas
+        window.location.href = 'tela.html';
+    }
+</script>
+
+</body>
+</html>
